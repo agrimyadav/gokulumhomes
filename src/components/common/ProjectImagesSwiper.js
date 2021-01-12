@@ -8,7 +8,7 @@ import {
   SwiperWrapper,
 } from "../../styles/styled-components/projectSwiper";
 
-import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+// import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 const params = {
   pagination: {
