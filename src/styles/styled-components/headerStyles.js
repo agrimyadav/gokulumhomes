@@ -168,21 +168,19 @@ export const MobileWrapper = styled.div`
 
 export const MobileButton = styled.div`
   padding: 16px 30px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 48px;
   background: #ffffff;
   text-align: center;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
 
     a {
         font-size: 15px;
     text-decoration: none;
-    opacity: 0.64;
       text-transform: uppercase;
     line-height: 24px;
     letter-spacing: 0.08em;
     font-weight: 600;
+    color: #000000
   }
   }
 `;

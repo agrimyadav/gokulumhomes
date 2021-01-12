@@ -20,6 +20,7 @@ const params = {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  speed: 1300,
   breakpoints: {
     1024: {
       slidesPerView: 1.4,
