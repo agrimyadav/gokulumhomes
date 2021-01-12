@@ -91,15 +91,20 @@ export const Button = styled.div`
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin: 0;
   background: transparent;
-  line-height: 24px;
-  opacity: 0.64;
-  letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   &:hover {
-    background: #f4f4f4;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+    opacity: 0.64;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    font-weight: 600;
   }
 
   &:hover {
@@ -162,16 +167,22 @@ export const MobileWrapper = styled.div`
 `;
 
 export const MobileButton = styled.div`
-  font-size: 15px;
   padding: 16px 30px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 48px;
   background: #ffffff;
-  line-height: 24px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+
+    a {
+        font-size: 15px;
+    text-decoration: none;
+    opacity: 0.64;
+      text-transform: uppercase;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+  }
   }
 `;

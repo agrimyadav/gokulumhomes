@@ -43,21 +43,11 @@ export const ProjectWrapper = styled.div`
 `;
 
 export const Image = styled.div`
-  background-image: url(${(props) => props.url});
-  padding-bottom: 112%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   transition: transform 0.6s ease-in-out;
   cursor: pointer;
 
   &:hover {
     transform: scale(1.1);
-  }
-
-  @media only screen and ${device.mobileL} {
-    padding-bottom: 124%;
-    background-size: cover;
   }
 `;
 
@@ -153,7 +143,12 @@ export const ButtonTitle = styled.p`
 `;
 
 export const ButtonText = styled.span`
-  font-size: 13px;
+  
+  transition: all 0.3s linear;
+  cursor: pointer;
+
+    a {
+    font-size: 13px;
   line-height: 24px;
   font-weight: bold;
   color: #ffffff;
@@ -161,8 +156,8 @@ export const ButtonText = styled.span`
   padding-bottom: 7px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
-  transition: all 0.3s linear;
-  cursor: pointer;
+  text-decoration: none;
+  }
 
   &:hover {
     border-bottom: border-bottom: 2px solid rgb(255, 255, 255);

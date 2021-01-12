@@ -14,6 +14,7 @@ import {
 } from "../styles/styled-components/projectSection";
 import { Title } from "../styles/styled-components/aboutSection";
 import ProjectImagesSwiper from "./common/ProjectImagesSwiper";
+import ImageLazyLoad from "./common/ImageLazyLoad";
 
 const data = [
   {
@@ -81,13 +82,20 @@ const Projects = () => {
                 <div key={`project-${id}`}>
                   <ProjectWrapper id={id}>
                     <div style={{ overflow: "hidden", position: "relative" }}>
-                      <Image
-                        url={detail.mainImage}
-                        onClick={() => {
-                          setShowSwiper(true);
-                          setProjectImages(detail);
-                        }}
-                      />
+                      <Image>
+                        <ImageLazyLoad
+                          bgImg={detail.mainImage}
+                          // url={detail.mainImage}
+                          onClick={() => {
+                            setShowSwiper(true);
+                            setProjectImages(detail);
+                          }}
+                          bgPos="center"
+                          bgSize="cover"
+                          paddingBottom="112%"
+                          mobilePadding="124%"
+                        />
+                      </Image>
                       <Count>{detail.count}</Count>
                     </div>
                     <Heading>{detail.heading}</Heading>
@@ -101,7 +109,9 @@ const Projects = () => {
           <GetInTouch>
             <div>
               <ButtonTitle>Upcoming Projects</ButtonTitle>
-              <ButtonText>Get in Touch</ButtonText>
+              <ButtonText>
+                <a href="mailto:info@gokulumhomes.com">Get in Touch</a>
+              </ButtonText>
             </div>
           </GetInTouch>
         </Container>

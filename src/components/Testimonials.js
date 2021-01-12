@@ -18,6 +18,27 @@ const params = {
   centeredSlides: true,
 };
 
+const comments = [
+  {
+    comment:
+      "I am really satisfied with the services offered by Gokulum Homes. The best part was the care and attention with which they understood the details of what I had in mind.They actually listened to my needs and helped me find exactly what I was looking for!",
+    name: "Mayank Verma",
+    location: "",
+  },
+  {
+    comment:
+      "This is a thank you note for the exceptional service we received from Gokulum Homes. We really appreciate the attention they paid to our concerns, whether it was about finances, or finding a specific product for our home, everything went smoothly.",
+    name: "Soumya Sharma",
+    location: "",
+  },
+  {
+    comment:
+      "The best part about collaborating with Gokulum Homes was that everything was so well-planned from the beginning. I am very content with their services, especially the quick responses we got in emergencies. It was a great experience overall.",
+    name: "Dr. Akash Tyagi",
+    location: "",
+  },
+];
+
 const Testimonials = () => {
   const [swiper, updateSwiper] = useState(null);
 
@@ -46,18 +67,12 @@ const Testimonials = () => {
     <>
       <div>
         <Container>
-          {[1, 2, 3].map((card) => {
+          {comments.map((comment) => {
             return (
-              <Card key={card}>
-                <Text>
-                  " I am really satisfied with the services offered by Gokulum
-                  Homes. The best part was the care and attention with which
-                  they understood the details of what I had in mind. They
-                  actually listened to my needs and helped me find exactly what
-                  I was looking for! “
-                </Text>
-                <SubText>Tamana Grover</SubText>
-                <SubText location>DLF Phase - I, Gurgaon</SubText>
+              <Card key={comment}>
+                <Text>" {comment.comment} "</Text>
+                <SubText>{comment.name}</SubText>
+                <SubText location>{comment.location}</SubText>
               </Card>
             );
           })}
@@ -66,19 +81,13 @@ const Testimonials = () => {
         {/* Mobile swiper */}
         <Container mobile>
           <Swiper {...params} getSwiper={updateSwiper}>
-            {[1, 2, 3].map((card) => {
+            {comments.map((comment) => {
               return (
                 <div>
-                  <Card key={`card-${card}`}>
-                    <Text>
-                      " I am really satisfied with the services offered by
-                      Gokulum Homes. The best part was the care and attention
-                      with which they understood the details of what I had in
-                      mind. They actually listened to my needs and helped me
-                      find exactly what I was looking for! “
-                    </Text>
-                    <SubText>Tamana Grover</SubText>
-                    <SubText location>DLF Phase - I, Gurgaon</SubText>
+                  <Card key={`swiper-${comment}`}>
+                    <Text>" {comment.comment} "</Text>
+                    <SubText>{comment.name}</SubText>
+                    <SubText location>{comment.location}</SubText>
                   </Card>
                 </div>
               );

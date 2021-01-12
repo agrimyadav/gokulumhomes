@@ -8,6 +8,7 @@ import {
   Next,
   Prev,
 } from "../styles/styled-components/heroSwiper";
+import ImageLazyLoad from "./common/ImageLazyLoad";
 
 const images = ["/images/home1.png", "/images/home2.png", "/images/home3.png"];
 
@@ -67,13 +68,16 @@ const HeroSwiper = () => {
     <>
       <Div className="hero-swiper">
         <Swiper {...params} getSwiper={updateSwiper}>
-          {/* <ImageDiv url={home1}></ImageDiv>
-          <ImageDiv url={home2}></ImageDiv>
-          <ImageDiv url={home3}></ImageDiv> */}
           {images.map((image) => {
             return (
               <div key={image}>
-                <ImageDiv url={image}></ImageDiv>
+                <ImageLazyLoad
+                  bgImg={image}
+                  bgPos="center"
+                  bgSize="cover"
+                  paddingBottom="40.5%"
+                  mobilePadding="75.5%"
+                />
               </div>
             );
           })}

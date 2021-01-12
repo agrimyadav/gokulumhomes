@@ -75,15 +75,15 @@ export const SwiperWrapper = styled.div`
       padding-bottom: 0;
 
       .swiper-button-next {
-        bottom: 32px;
-        background-size: 34px;
+        bottom: 58px;
+        background-size: 44px;
         top: auto;
         right: 30%;
         height: 20px;
       }
       .swiper-button-prev {
-        bottom: 32px;
-        background-size: 34px;
+        bottom: 58px;
+        background-size: 44px;
         top: auto;
         left: 29%;
         height: 20px;
@@ -93,7 +93,7 @@ export const SwiperWrapper = styled.div`
         color: white;
         left: 0;
         width: 100%;
-        bottom: 32px;
+        bottom: 60px;
       }
     }
   }

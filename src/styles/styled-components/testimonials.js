@@ -20,6 +20,8 @@ export const Container = styled.div`
 export const Card = styled.div`
   border: 1px solid rgba(0, 0, 0, 0.12);
   padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
 
   @media only screen and ${device.mobileL} {
     padding: 32px 24px 40px;
@@ -35,6 +37,7 @@ export const Text = styled.p`
   padding-bottom: 52px;
   margin-bottom: 32px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  flex-grow: 1;
 
   @media only screen and ${device.mobileL} {
     font-size: 20px;

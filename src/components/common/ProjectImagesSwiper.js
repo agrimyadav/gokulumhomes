@@ -7,6 +7,7 @@ import {
   Text,
   SwiperWrapper,
 } from "../../styles/styled-components/projectSwiper";
+import ImageLazyLoad from "./ImageLazyLoad";
 
 // import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
@@ -60,7 +61,13 @@ const ProjectImagesSwiper = ({ showSwiper, setShowSwiper, data }) => {
               {data.projectImages.map((image) => {
                 return (
                   <div key={image}>
-                    <ImageDiv url={image}></ImageDiv>
+                    <ImageLazyLoad
+                      bgImg={image}
+                      bgPos="center"
+                      bgSize="cover"
+                      paddingBottom="50%"
+                      mobilePadding="66%"
+                    />
                   </div>
                 );
               })}

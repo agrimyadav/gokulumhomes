@@ -27,7 +27,9 @@ const Header = () => {
           <Logo color>Homes</Logo>
         </Div>
         <Div flex button hideMobile>
-          <Button>Get in touch</Button>
+          <Button>
+            <a href="mailto:info@gokulumhomes.com">Get in touch</a>
+          </Button>
         </Div>
         <MenuWrapper mobile>
           <Menu top src="/images/menu1.svg" onClick={() => onClose(!isOpen)} />

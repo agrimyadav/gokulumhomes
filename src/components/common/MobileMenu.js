@@ -44,7 +44,9 @@ const MobileMenu = ({ isOpen, onClose }) => {
                 <Text>Careers</Text>
               </div>
               <div>
-                <MobileButton>Get in touch</MobileButton>
+                <MobileButton>
+                  <a href="mailto:info@gokulumhomes.com">Get in touch</a>
+                </MobileButton>
               </div>
             </NavItems>
           </div>
