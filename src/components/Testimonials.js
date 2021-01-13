@@ -21,20 +21,20 @@ const params = {
 const comments = [
   {
     comment:
-      "I am really satisfied with the services offered by Gokulum Homes. The best part was the care and attention with which they understood the details of what I had in mind.They actually listened to my needs and helped me find exactly what I was looking for!",
+      "Gokulum Homes has been helping me with my real estate needs for more than a year now, and I am really satisfied. They always communicate on time, and lookout for the best of my interests through each negotiation!",
     name: "Mayank Verma",
     location: "",
   },
   {
     comment:
-      "This is a thank you note for the exceptional service we received from Gokulum Homes. We really appreciate the attention they paid to our concerns, whether it was about finances, or finding a specific product for our home, everything went smoothly.",
-    name: "Soumya Sharma",
+      "It was a pleasure working with a knowledgeable and efficient team at Gokulum Homes. We really appreciate the attention paid to our concerns, from catering to interior design needs, planning finances, or building our perfect abode. I would recommend them to anyone who needs expert help.",
+    name: "Dr. Akash Tyagi",
     location: "",
   },
   {
     comment:
-      "The best part about collaborating with Gokulum Homes was that everything was so well-planned from the beginning. I am very content with their services, especially the quick responses we got in emergencies. It was a great experience overall.",
-    name: "Dr. Akash Tyagi",
+      "This is a thank you note for the exceptional service we received from Gokulum Homes. Thanks for making the sale of our first home a success! We couldn't have done it so smoothly without their professional and expert help.",
+    name: "Soumya Sharma",
     location: "",
   },
 ];

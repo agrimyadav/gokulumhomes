@@ -31,14 +31,14 @@ export const SwiperWrapper = styled.div`
   .swiper-pagination-current {
     margin-right: 8px;
     &:before {
-      content: "0";
+      content: ${(props) => (props.length > 10 ? "0" : "0")};
     }
   }
 
   .swiper-pagination-total {
     margin-left: 8px;
     &:before {
-      content: "0";
+      content: ${(props) => (props.length > 10 ? "0" : "0")};
     }
   }
 
@@ -102,7 +102,7 @@ export const SwiperWrapper = styled.div`
 export const ImageDiv = styled.div`
   background-image: url(${(props) => props.url});
   padding-bottom: 50%;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 
   @media only screen and ${device.mobileL} {

@@ -19,26 +19,38 @@ import ImageLazyLoad from "./common/ImageLazyLoad";
 const data = [
   {
     heading: "Luxury Builder Floor",
-    mainImage: "/images/project1.png",
+    mainImage: "/images/perojects/project1/Cover.jpg",
     location: "DLF Phase - I, Gurgaon · 500 Sq. Yard",
     count: "01",
     info:
       "Situated in DLF-1 on a 12-meter wide road, this super luxurious builder floor is a modern masterpiece spanning 500 sq. yards. Built at a serene and secure location, it faces a beautiful park and is fitted and furnished with high-end interiors.",
+
     projectImages: [
-      "/images/projectImage1.png",
-      "/images/projectImage2.png",
-      "/images/projectImage3.png",
+      "/images/perojects/project1/images/1.jpg",
+      "/images/perojects/project1/images/2.jpg",
+      "/images/perojects/project1/images/3.jpg",
+      "/images/perojects/project1/images/4.jpg",
+      "/images/perojects/project1/images/5.png",
+      "/images/perojects/project1/images/6.png",
+      "/images/perojects/project1/images/7.JPG",
+      "/images/perojects/project1/images/8.JPG",
+      "/images/perojects/project1/images/9.jpg",
+      "/images/perojects/project1/images/10.jpg",
+      "/images/perojects/project1/images/11.jpg",
+      "/images/perojects/project1/images/12.jpg",
     ],
   },
   {
     heading: "Luxury Builder Floor",
-    mainImage: "/images/project1.png",
+    mainImage: "/images/perojects/project2/Cover.jpg",
     location: "DLF Phase - I, Gurgaon · 500 Sq. Yard",
     count: "02",
     projectImages: [
-      "/images/projectImage1.png",
-      "/images/projectImage2.png",
-      "/images/projectImage3.png",
+      "/images/perojects/project2/images/1.PNG",
+      "/images/perojects/project2/images/2.PNG",
+      "/images/perojects/project2/images/3.PNG",
+      "/images/perojects/project2/images/4.PNG",
+      "/images/perojects/project2/images/5.Png",
     ],
 
     info:
@@ -46,14 +58,10 @@ const data = [
   },
   {
     heading: "Luxury Builder Floor",
-    mainImage: "/images/project1.png",
+    mainImage: "/images/perojects/project3/Cover.jpg",
     location: "DLF Phase - I, Gurgaon · 500 Sq. Yard",
     count: "03",
-    projectImages: [
-      "/images/projectImage1.png",
-      "/images/projectImage3.png",
-      "/images/projectImage2.png",
-    ],
+    projectImages: ["/images/perojects/project3/Cover.jpg"],
 
     info:
       "Situated in DLF-1 on a 12-meter wide road, this super luxurious builder floor is a modern masterpiece spanning 500 sq. yards. Built at a serene and secure location, it faces a beautiful park and is fitted and furnished with high-end interiors.",

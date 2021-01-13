@@ -44,7 +44,6 @@ const ProjectImagesSwiper = ({ showSwiper, setShowSwiper, data }) => {
   //       enableBodyScroll(targetElement.current);
   //     }
   //   }, [showSwiper]);
-
   return (
     <>
       <div ref={targetElement} style={{ position: "relative" }}>
@@ -56,24 +55,35 @@ const ProjectImagesSwiper = ({ showSwiper, setShowSwiper, data }) => {
             }}
           />
           <Text>{data.heading}</Text>
-
-          <SwiperWrapper>
-            <Swiper {...params}>
-              {data.projectImages.map((image) => {
-                return (
-                  <div key={image}>
-                    <ImageLazyLoad
-                      bgImg={image}
-                      bgPos="center"
-                      bgSize="cover"
-                      paddingBottom="50%"
-                      mobilePadding="66%"
-                      tabletPadding="100%"
-                    />
-                  </div>
-                );
-              })}
-            </Swiper>
+          <SwiperWrapper length={data.projectImages.length}>
+            {data.projectImages.length > 1 ? (
+              <Swiper {...params}>
+                {data.projectImages.map((image) => {
+                  return (
+                    <div key={image}>
+                      <ImageLazyLoad
+                        bgImg={image}
+                        bgPos="center"
+                        bgSize="cover"
+                        paddingBottom="50%"
+                        mobilePadding="66%"
+                        tabletPadding="100%"
+                      />
+                    </div>
+                  );
+                })}
+              </Swiper>
+            ) : (
+              <ImageLazyLoad
+                bgImg={data.projectImages}
+                bgPos="center"
+                bgSize="contain"
+                bgRepeat="no-repeat"
+                paddingBottom="50%"
+                mobilePadding="66%"
+                tabletPadding="100%"
+              />
+            )}
           </SwiperWrapper>
         </Container>
       </div>

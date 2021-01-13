@@ -62,6 +62,7 @@ const Div = styled.div`
   background-size: ${(props) => props.bgSize};
   background-position: ${(props) => props.bgPos};
   padding-bottom: ${(props) => props.paddingBottom};
+  background-repeat: ${(props) => props.bgRepeat};
 
   @media only screen and ${device.mobileL} {
     padding-bottom: ${(props) =>
