@@ -50,6 +50,7 @@ export const PaginationWrapper = styled.div`
   bottom: 24px;
   right: 88px;
   min-width: 200px;
+  align-items: center;
 
   @media only screen and ${device.mobileL} {
     bottom: 16px;
