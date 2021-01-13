@@ -67,6 +67,15 @@ const Div = styled.div`
     padding-bottom: ${(props) =>
       props.mobilePadding ? props.mobilePadding : props.paddingBottom};
   }
+
+  @media only screen and ${device.tablet} {
+    padding-bottom: ${(props) =>
+      props.tabletPadding ? props.tabletPadding : props.paddingBottom};
+  }
+
+  @media only screen and ${device.laptop} {
+    padding-bottom: ${(props) => props.paddingBottom};
+  }
 `;
 
 const InnerDiv = styled.div`

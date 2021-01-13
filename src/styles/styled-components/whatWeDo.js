@@ -28,6 +28,18 @@ export const WrapperGrid = styled.div`
     grid-gap: 0px;
     padding: 0;
   }
+
+  @media only screen and ${device.tablet} {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    padding: 0;
+  }
+
+  @media only screen and ${device.tabletL} {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 190px;
+    padding: ${(props) => (props.padding ? "32px 0" : "0")};
+  }
 `;
 
 export const Subheading = styled.div`

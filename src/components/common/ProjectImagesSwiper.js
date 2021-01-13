@@ -68,6 +68,7 @@ const ProjectImagesSwiper = ({ showSwiper, setShowSwiper, data }) => {
                       bgSize="cover"
                       paddingBottom="50%"
                       mobilePadding="66%"
+                      tabletPadding="100%"
                     />
                   </div>
                 );

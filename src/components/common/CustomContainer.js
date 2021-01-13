@@ -8,6 +8,14 @@ const Wrapper = styled.div`
   @media only screen and ${device.mobileL} {
     padding: 0 32px;
   }
+
+  @media only screen and ${device.tablet} {
+    padding: 0 84px;
+  }
+
+  @media only screen and ${device.laptop} {
+    padding: 0 168px;
+  }
 `;
 
 const CustomContainer = ({ children, ...rest }) => {

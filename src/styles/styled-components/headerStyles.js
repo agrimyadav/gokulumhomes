@@ -2,22 +2,33 @@ import styled from "styled-components";
 import { device } from "./mediaQueries";
 
 export const Wrapper = styled.div`
-  padding: ${(props) => (props.footer ? "24px 0 48px 0" : "16px 88px")};
+  padding: ${(props) => (props.footer ? "24px 0 48px 0" : "0")};
   margin: ${(props) => (props.footer ? "0 88px" : "0")};
   display: flex;
   justify-content: ${(props) => (props.footer ? "space-between" : "center")};
   align-items: center;
   border-top: ${(props) => (props.footer ? "1px solid rgba(0,0,0,0.12)" : "")};
-  position: sticky;
+  position: ${(props) => (props.footer ? "initial" : "fixed")};
+  left: 0;
   top: 0;
   z-index: 101;
   background: #ffffff;
   box-shadow: ${(props) =>
     props.footer ? "0" : "0px 4px 4px rgba(0, 0, 0, 0.05)"};
+  width: ${(props) => (props.footer ? "auto" : "100%")};
 
   @media only screen and ${device.mobileL} {
     margin: ${(props) => (props.footer ? "0 32px" : "0")};
-    padding: ${(props) => (props.footer ? "16px 0 32px" : "24px")};
+    padding: ${(props) => (props.footer ? "16px 0 32px" : "0")};
+  }
+`;
+
+export const InnerWrapper = styled.div`
+  display: flex;
+  padding: 16px 88px;
+
+  @media only screen and ${device.mobileL} {
+    padding: 24px;
   }
 `;
 
@@ -25,6 +36,7 @@ export const Div = styled.div`
   flex: 33%;
   display: ${(props) => (props.flex ? "flex" : "none")};
   justify-content: ${(props) => (props.button ? "flex-end" : "center")};
+  align-items: center;
 
   @media only screen and ${device.mobileL} {
     display: ${(props) => (props.hideMobile ? "none" : "flex")};

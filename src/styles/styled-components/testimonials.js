@@ -15,6 +15,14 @@ export const Container = styled.div`
     padding-top: 72px;
     padding-bottom: 96px;
   }
+
+  @media only screen and ${device.tablet} {
+    display: ${(props) => (props.mobile ? "block" : "none")};
+  }
+
+  @media only screen and ${device.tabletL} {
+    display: ${(props) => (props.mobile ? "none" : "grid")};
+  }
 `;
 
 export const Card = styled.div`
