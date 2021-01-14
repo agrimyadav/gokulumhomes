@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "./mediaQueries";
 
 export const OuterWrapper = styled.div`
-  padding: 120px 0 176px;
+  padding: 120px 0 146px;
   @media only screen and ${device.mobileL} {
     padding: 72px 0 96px;
   }
