@@ -19,13 +19,14 @@ import ImageLazyLoad from "./common/ImageLazyLoad";
 const data = [
   {
     heading: "Luxury Builder Floor",
-    mainImage: "/images/perojects/project1/Cover.jpg",
+    mainImage: "/images/perojects/project1/images/1.jpg",
     location: "DLF Phase - I, Gurgaon · 500 Sq. Yard",
     count: "01",
     info:
       "Situated in DLF-1 on a 12-meter wide road, this super luxurious builder floor is a modern masterpiece spanning 500 sq. yards. Built at a serene and secure location, it faces a beautiful park and is fitted and furnished with high-end interiors.",
 
     projectImages: [
+      "/images/perojects/project1/Cover.jpg",
       "/images/perojects/project1/images/1.jpg",
       "/images/perojects/project1/images/2.jpg",
       "/images/perojects/project1/images/3.jpg",
@@ -50,7 +51,7 @@ const data = [
       "/images/perojects/project2/images/2.PNG",
       "/images/perojects/project2/images/3.PNG",
       "/images/perojects/project2/images/4.PNG",
-      "/images/perojects/project2/images/5.Png",
+      "/images/perojects/project2/images/5.PNG",
     ],
 
     info:

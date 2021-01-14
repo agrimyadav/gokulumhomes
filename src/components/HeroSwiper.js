@@ -66,6 +66,7 @@ const HeroSwiper = () => {
 
   return (
     <>
+      <div style={{ marginTop: "82px" }}></div>
       <Div className="hero-swiper">
         <Swiper {...params} getSwiper={updateSwiper}>
           {images.map((image) => {

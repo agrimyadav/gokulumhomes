@@ -46,13 +46,19 @@ const Index = () => {
             <Header />
             <HeroSwiper />
             <CustomContainer>
-              <AboutSection />
+              <div id="about">
+                <AboutSection />
+              </div>
             </CustomContainer>
             <MottoSection />
             <CustomContainer>
-              <Projects />
+              <div id="projects">
+                <Projects />
+              </div>
             </CustomContainer>
-            <WhatWeDoSection />
+            <div id="services">
+              <WhatWeDoSection />
+            </div>
             <CustomContainer>
               <Testimonials />
             </CustomContainer>

@@ -11,8 +11,37 @@ import {
 } from "../../styles/styled-components/headerStyles";
 import MobileMenu from "./MobileMenu";
 import WebsiteContainer from "./WebsiteContainer";
+import { animateScroll as scroll } from "react-scroll";
+
+const headerLinks = [
+  {
+    name: "About",
+    handle: "about",
+  },
+  {
+    name: "Projects",
+    handle: "projects",
+  },
+  {
+    name: "Services",
+    handle: "services",
+  },
+  {
+    name: "Careers",
+    handle: "careers",
+  },
+];
 
 const Header = () => {
+  const scrollToSection = (element) => {
+    const scrollSection = document.querySelector(`#${element}`);
+    console.log(element);
+    scroll.scrollTo(scrollSection && scrollSection.offsetTop - 20, {
+      duration: 1000,
+      smooth: "easeInOut",
+    });
+  };
+
   const [isOpen, onClose] = useState(false);
   return (
     <>
@@ -21,10 +50,17 @@ const Header = () => {
         <WebsiteContainer>
           <InnerWrapper>
             <Div flex hideMobile>
-              <Text nav>About</Text>
-              <Text nav>Projects</Text>
-              <Text nav>Services</Text>
-              <Text nav>Careers</Text>
+              {headerLinks.map((link) => {
+                return (
+                  <Text
+                    key={link.handle}
+                    nav
+                    onClick={() => scrollToSection(link.handle)}
+                  >
+                    {link.name}
+                  </Text>
+                );
+              })}
             </Div>
             <Div flex center>
               <Logo>Gokulum</Logo>
@@ -46,7 +82,7 @@ const Header = () => {
           </InnerWrapper>
         </WebsiteContainer>
       </Wrapper>
-      <MobileMenu isOpen={isOpen} onClose={onClose} />
+      <MobileMenu headerLinks={headerLinks} isOpen={isOpen} onClose={onClose} />
       {/* </div> */}
     </>
   );

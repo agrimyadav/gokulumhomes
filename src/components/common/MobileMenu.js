@@ -7,9 +7,20 @@ import {
   MobileButton,
 } from "../../styles/styled-components/headerStyles";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+import { animateScroll as scroll } from "react-scroll";
 
-const MobileMenu = ({ isOpen, onClose }) => {
+const MobileMenu = ({ isOpen, onClose, headerLinks }) => {
   const targetElement = React.useRef(null);
+
+  const scrollToSection = (element) => {
+    const scrollSection = document.querySelector(`#${element}`);
+    onClose(!isOpen);
+    scroll.scrollTo(scrollSection && scrollSection.offsetTop - 20, {
+      duration: 1000,
+      smooth: "easeInOut",
+      delay: 500,
+    });
+  };
 
   useEffect(() => {
     if (isOpen) {
@@ -38,10 +49,16 @@ const MobileMenu = ({ isOpen, onClose }) => {
                   flexDirection: "column",
                 }}
               >
-                <Text>About</Text>
-                <Text>Projects</Text>
-                <Text>Services</Text>
-                <Text>Careers</Text>
+                {headerLinks.map((link) => {
+                  return (
+                    <Text
+                      key={`mobile-${link.handle}`}
+                      onClick={() => scrollToSection(link.handle)}
+                    >
+                      {link.name}
+                    </Text>
+                  );
+                })}
               </div>
               <div>
                 <MobileButton>

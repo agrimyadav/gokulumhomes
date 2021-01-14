@@ -64,7 +64,8 @@ const ProjectImagesSwiper = ({ showSwiper, setShowSwiper, data }) => {
                       <ImageLazyLoad
                         bgImg={image}
                         bgPos="center"
-                        bgSize="cover"
+                        bgSize="contain"
+                        bgRepeat="no-repeat"
                         paddingBottom="50%"
                         mobilePadding="66%"
                         tabletPadding="100%"
