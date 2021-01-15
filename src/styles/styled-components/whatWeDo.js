@@ -19,7 +19,7 @@ export const MainWrapper = styled.div`
 export const WrapperGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 190px;
+  grid-gap: 160px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   padding: ${(props) => (props.padding ? "32px 0" : "0")};
 
@@ -37,7 +37,7 @@ export const WrapperGrid = styled.div`
 
   @media only screen and ${device.tabletL} {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 190px;
+    grid-gap: 160px;
     padding: ${(props) => (props.padding ? "32px 0" : "0")};
   }
 `;

@@ -20,7 +20,7 @@ const data = [
   {
     heading: "Luxury Builder Floor",
     mainImage: "/images/perojects/project1/images/1.jpg",
-    location: "DLF Phase - I, Gurgaon · 500 Sq. Yard",
+    location: "DLF Phase - IV, Gurgaon",
     count: "01",
     info:
       "Built at a serene and secure location in Gurugram, this super luxurious builder floor stands tall facing a beautiful park. It is a modern masterpiece, furnished with high-end interiors and state-of-the-art architecture. ",
@@ -43,7 +43,7 @@ const data = [
   {
     heading: "Luxury Builder Floor",
     mainImage: "/images/perojects/project2/Cover.jpg",
-    location: "DLF Phase - I, Gurgaon · 500 Sq. Yard",
+    location: "DLF Phase - I, Gurgaon",
     count: "02",
     projectImages: [
       "/images/perojects/project2/images/1.PNG",
@@ -59,7 +59,7 @@ const data = [
   {
     heading: "Luxury Builder Floor",
     mainImage: "/images/perojects/project3/Cover.jpg",
-    location: "DLF Phase - I, Gurgaon · 500 Sq. Yard",
+    location: "DLF Phase - I, Gurgaon",
     count: "03",
     projectImages: ["/images/perojects/project3/Cover.jpg"],
 

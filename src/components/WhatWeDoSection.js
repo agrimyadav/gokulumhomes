@@ -48,7 +48,7 @@ const WhatWeDoSection = () => {
                 </Div>
                 <Div>
                   <Text count>04</Text>
-                  <Text>Planning</Text>
+                  <Text>Investment Planning</Text>
                 </Div>
               </WrapperGrid>
               <WrapperGrid padding>
