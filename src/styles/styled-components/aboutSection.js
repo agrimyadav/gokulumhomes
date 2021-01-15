@@ -26,16 +26,16 @@ export const Title = styled.span`
 
 export const Heading = styled.p`
   font-size: 24px;
-  line-heightL 36px;
+  line-height: 36px;
   font-weight: normal;
   padding-bottom: 56px;
-  border-bottom: 1px solid rgba(0,0,0, .12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 
   @media only screen and ${device.mobileL} {
     margin-top: 24px;
     padding-bottom: 40px;
     font-size: 20px;
-  line-height: 32px;
+    line-height: 32px;
   }
 `;
 
