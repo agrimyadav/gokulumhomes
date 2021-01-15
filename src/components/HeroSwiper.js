@@ -10,7 +10,13 @@ import {
 } from "../styles/styled-components/heroSwiper";
 import ImageLazyLoad from "./common/ImageLazyLoad";
 
-const images = ["/images/home1.png", "/images/home2.png", "/images/home3.png"];
+const images = [
+  "/images/home1.png",
+  "/images/home2.png",
+  "/images/home3.png",
+  "/images/hero4.jpg",
+  "/images/hero5.jpg",
+];
 
 const params = {
   effect: "coverflow",
@@ -18,10 +24,14 @@ const params = {
   speed: 1500,
   slidesPerView: 1,
   allowTouchMove: false,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
   breakpoints: {
     1024: {
       coverflowEffect: {
@@ -45,26 +55,28 @@ const params = {
 };
 
 const HeroSwiper = () => {
-  const [swiper, updateSwiper] = useState(null);
+  const [swiper, setSwiper] = useState(null);
 
-  const [imagesCount, setImageCount] = useState(1);
-  React.useEffect(() => {
-    swiper && swiper.update();
-  }, [imagesCount]);
+  console.log(swiper && swiper.swiper);
+
+  const onSwiperInit = (swiper) => {
+    setSwiper({ swiper });
+
+    swiper &&
+      swiper.on("slideChange", () => {
+        setSwiper({ swiper });
+      });
+  };
 
   const goNext = () => {
     if (swiper !== null) {
-      swiper.slideNext();
-      setImageCount((prevCount) => prevCount + 1);
-      if (imagesCount > 20) setImageCount(0);
+      swiper.swiper.slideNext();
     }
   };
 
   const goPrev = () => {
     if (swiper !== null) {
-      swiper.slidePrev();
-      setImageCount((prevCount) => prevCount + 1);
-      if (imagesCount > 20) setImageCount(0);
+      swiper.swiper.slidePrev();
     }
   };
 
@@ -72,7 +84,10 @@ const HeroSwiper = () => {
     <>
       <div style={{ marginTop: "82px" }}></div>
       <Div className="hero-swiper">
-        <Swiper {...params} getSwiper={updateSwiper}>
+        <Swiper
+          {...params}
+          getSwiper={(swiperReady) => onSwiperInit(swiperReady)}
+        >
           {images.map((image) => {
             return (
               <div key={image}>
@@ -91,7 +106,7 @@ const HeroSwiper = () => {
           <Prev onClick={goPrev}></Prev>
           <div style={{ zIndex: 2 }}>
             <Count style={{ marginRight: "8px" }}>
-              0{swiper && swiper.realIndex + 1}
+              0{swiper && swiper.swiper && swiper.swiper.realIndex + 1}
             </Count>
             <Count>/</Count>
             <Count style={{ marginLeft: "9px" }}>0{images.length}</Count>

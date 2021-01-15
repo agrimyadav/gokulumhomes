@@ -7,7 +7,8 @@ import {
   Text,
 } from "../styles/styled-components/GetInTouch";
 
-import GoogleMapReact from "google-map-react";
+import styled from "styled-components";
+import { device } from "../styles/styled-components/mediaQueries";
 
 const defaultProps = {
   center: {
@@ -35,18 +36,28 @@ const GetInTouch = () => {
           </div>
         </div>
 
-        <div style={{ height: "50vh", width: "100%", maxHeight: "408px" }}>
-          <GoogleMapReact
-            bootstrapURLKeys={{
-              key: "AIzaSyBXWUQx3PmsvY82AtTqX4pFT9wSQEjM_R0",
-            }}
-            defaultCenter={defaultProps.center}
-            defaultZoom={defaultProps.zoom}
-          ></GoogleMapReact>
-        </div>
+        <MapWrapper>
+          <iframe
+            width="100%"
+            height="100%"
+            frameborder="0"
+            style={{ border: "0" }}
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJL2Rs4dEYDTkRpJwPtJsSNOU&key=AIzaSyAIwzVLISQ0VaS0E0wzC8x8gErRfuzTN48"
+            allowfullscreen
+          ></iframe>
+        </MapWrapper>
       </WrapperGrid>
     </>
   );
 };
 
 export default GetInTouch;
+
+const MapWrapper = styled.div`
+  height: 100%;
+  width: 100%;
+
+  @media only screen and ${device.mobileL} {
+    height: 344px;
+  }
+`;

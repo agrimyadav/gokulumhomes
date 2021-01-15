@@ -35,12 +35,30 @@ export const InnerWrapper = styled.div`
 export const Div = styled.div`
   flex: 33%;
   display: ${(props) => (props.flex ? "flex" : "none")};
-  justify-content: ${(props) => (props.button ? "flex-end" : "center")};
+  justify-content: ${(props) =>
+    props.button ? "flex-end" : props.start ? "start" : "start"};
   align-items: center;
+
+  a {
+    font-size: ${(props) => props.theme.text.header};
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    line-height: 24px;
+    color: black;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  &:nth-child(3) {
+    margin-right: 0;
+  }
 
   @media only screen and ${device.mobileL} {
     display: ${(props) => (props.hideMobile ? "none" : "flex")};
     flex: ${(props) => (props.mobile ? "initial" : "33%")};
+    justify-content: ${(props) => (props.start ? "center" : "center")};
   }
 `;
 
@@ -187,12 +205,12 @@ export const MobileButton = styled.div`
 
     a {
         font-size: 15px;
-    text-decoration: none;
-      text-transform: uppercase;
-    line-height: 24px;
-    letter-spacing: 0.08em;
-    font-weight: 600;
-    color: #000000
-  }
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+        font-weight: 600;
+        color: #000000
+    }
   }
 `;

@@ -23,19 +23,19 @@ const comments = [
     comment:
       "Gokulum Homes has been helping me with my real estate needs for more than a year now, and I am really satisfied. They always communicate on time, and lookout for the best of my interests through each negotiation!",
     name: "Mayank Verma",
-    location: "",
-  },
-  {
-    comment:
-      "It was a pleasure working with a knowledgeable and efficient team at Gokulum Homes. We really appreciate the attention paid to our concerns, from catering to interior design needs, planning finances, or building our perfect abode. I would recommend them to anyone who needs expert help.",
-    name: "Dr. Akash Tyagi",
-    location: "",
+    location: "Gurgaon Client",
   },
   {
     comment:
       "It was a pleasure working with a knowledgeable and efficient team at Gokulum Homes. We really appreciate the attention paid to our concerns, from catering to interior design needs, planning finances, or building our perfect abode. I would recommend them to anyone who needs an expert realtor.",
     name: "Soumya Sharma",
-    location: "",
+    location: " Dwarka Client",
+  },
+  {
+    comment:
+      "This is a thank you note for the exceptional service we received from Gokulum Homes. Thanks for making the sale of our first home a success! We couldn't have done it so smoothly without their professional help.",
+    name: "Dr. Akash Tyagi",
+    location: "Punjabi Bagh Client",
   },
 ];
 
@@ -65,13 +65,13 @@ const Testimonials = () => {
 
   return (
     <>
-      <div>
+      <div id="testimonials">
         <Container>
           {comments.map((comment) => {
             return (
               <Card key={`comments-${comment.name}`}>
                 <Text>" {comment.comment} "</Text>
-                <SubText>{comment.name}</SubText>
+                <SubText>{comment.name},</SubText>
                 <SubText location>{comment.location}</SubText>
               </Card>
             );

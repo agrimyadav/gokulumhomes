@@ -29,13 +29,17 @@ const headerLinks = [
   {
     name: "Careers",
     handle: "careers",
+    link: "mailto:info@gokulumhomes.com",
+  },
+  {
+    name: "Testimonials",
+    handle: "testimonials",
   },
 ];
 
 const Header = () => {
   const scrollToSection = (element) => {
     const scrollSection = document.querySelector(`#${element}`);
-    console.log(element);
     scroll.scrollTo(scrollSection && scrollSection.offsetTop - 20, {
       duration: 1000,
       smooth: "easeInOut",
@@ -49,22 +53,26 @@ const Header = () => {
       <Wrapper>
         <WebsiteContainer>
           <InnerWrapper>
+            <Div flex start>
+              <Logo>Gokulum</Logo>
+              <Logo color>Homes</Logo>
+            </Div>
             <Div flex hideMobile>
               {headerLinks.map((link) => {
                 return (
-                  <Text
-                    key={link.handle}
-                    nav
-                    onClick={() => scrollToSection(link.handle)}
-                  >
-                    {link.name}
-                  </Text>
+                  // <div>
+                  <a href={link.link && link.link}>
+                    <Text
+                      key={link.handle}
+                      nav
+                      onClick={() => scrollToSection(link.handle)}
+                    >
+                      {link.name}
+                    </Text>
+                  </a>
+                  // </div>
                 );
               })}
-            </Div>
-            <Div flex center>
-              <Logo>Gokulum</Logo>
-              <Logo color>Homes</Logo>
             </Div>
             <Div flex button hideMobile>
               <Button>
