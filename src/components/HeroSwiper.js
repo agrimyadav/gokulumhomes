@@ -18,6 +18,10 @@ const params = {
   speed: 1500,
   slidesPerView: 1,
   allowTouchMove: false,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   breakpoints: {
     1024: {
       coverflowEffect: {

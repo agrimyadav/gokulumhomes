@@ -14,8 +14,9 @@ const AboutSection = () => {
         <Title>About</Title>
         <div>
           <Heading>
-            Gokulum Homes is a Gurugram based real-estate business with
-            exquisite residential offerings in and around NCR.
+            At Gokulum Homes, we take pride in building super luxurious
+            residences in and around NCR, along with a lifetime liaison with our
+            clients.
           </Heading>
           <InfoGrid>
             <Text>

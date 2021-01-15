@@ -69,7 +69,7 @@ const Testimonials = () => {
         <Container>
           {comments.map((comment) => {
             return (
-              <Card key={comment}>
+              <Card key={`comments-${comment.name}`}>
                 <Text>" {comment.comment} "</Text>
                 <SubText>{comment.name}</SubText>
                 <SubText location>{comment.location}</SubText>
@@ -83,8 +83,8 @@ const Testimonials = () => {
           <Swiper {...params} getSwiper={updateSwiper}>
             {comments.map((comment) => {
               return (
-                <div>
-                  <Card key={`swiper-${comment}`}>
+                <div key={`swiper-${comment.name}`}>
+                  <Card>
                     <Text>" {comment.comment} "</Text>
                     <SubText>{comment.name}</SubText>
                     <SubText location>{comment.location}</SubText>

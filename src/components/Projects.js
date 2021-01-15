@@ -23,8 +23,7 @@ const data = [
     location: "DLF Phase - I, Gurgaon · 500 Sq. Yard",
     count: "01",
     info:
-      "Situated in DLF-1 on a 12-meter wide road, this super luxurious builder floor is a modern masterpiece spanning 500 sq. yards. Built at a serene and secure location, it faces a beautiful park and is fitted and furnished with high-end interiors.",
-
+      "Built at a serene and secure location in Gurugram, this super luxurious builder floor stands tall facing a beautiful park. It is a modern masterpiece, furnished with high-end interiors and state-of-the-art architecture. ",
     projectImages: [
       "/images/perojects/project1/Cover.jpg",
       "/images/perojects/project1/images/1.jpg",
@@ -55,7 +54,7 @@ const data = [
     ],
 
     info:
-      "Situated in DLF-1 on a 12-meter wide road, this super luxurious builder floor is a modern masterpiece spanning 500 sq. yards. Built at a serene and secure location, it faces a beautiful park and is fitted and furnished with high-end interiors.",
+      "Situated in one of the most sought-after neighborhoods in Gurugram, this elegant builder floor has spacious floor layouts fitted with modern interiors. It features a private elevator and ample parking space, perfectly crafted to suit the luxurious lifestyle.",
   },
   {
     heading: "Luxury Builder Floor",
@@ -65,7 +64,7 @@ const data = [
     projectImages: ["/images/perojects/project3/Cover.jpg"],
 
     info:
-      "Situated in DLF-1 on a 12-meter wide road, this super luxurious builder floor is a modern masterpiece spanning 500 sq. yards. Built at a serene and secure location, it faces a beautiful park and is fitted and furnished with high-end interiors.",
+      "Furnished with sophisticated interiors, this newly-built builder floor is located in the heart of Gurugram. It spans an enormous indoor space with fully-furnished bedrooms, bath spaces, walk-in closets, a rooftop bar, and a terrace garden. ",
   },
 ];
 
