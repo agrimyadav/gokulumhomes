@@ -33,7 +33,7 @@ const comments = [
   },
   {
     comment:
-      "This is a thank you note for the exceptional service we received from Gokulum Homes. Thanks for making the sale of our first home a success! We couldn't have done it so smoothly without their professional and expert help.",
+      "It was a pleasure working with a knowledgeable and efficient team at Gokulum Homes. We really appreciate the attention paid to our concerns, from catering to interior design needs, planning finances, or building our perfect abode. I would recommend them to anyone who needs an expert realtor.",
     name: "Soumya Sharma",
     location: "",
   },
