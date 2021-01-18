@@ -28,10 +28,10 @@ const params = {
     delay: 2500,
     disableOnInteraction: false,
   },
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
-  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   type: "fraction",
+  // },
   breakpoints: {
     1024: {
       coverflowEffect: {
@@ -56,8 +56,6 @@ const params = {
 
 const HeroSwiper = () => {
   const [swiper, setSwiper] = useState(null);
-
-  console.log(swiper && swiper.swiper);
 
   const onSwiperInit = (swiper) => {
     setSwiper({ swiper });

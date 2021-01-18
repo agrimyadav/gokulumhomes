@@ -21,23 +21,6 @@ export const ImageDiv = styled.div`
 
 export const Div = styled.div`
   position: relative;
-
-  .swiper-pagination-fraction {
-    background: white;
-    right: 88px;
-    bottom: 24px;
-    width: 264px;
-    left: auto;
-    padding: 38px 0;
-  }
-
-  .swiper-pagination-current {
-    margin-right: 5px;
-  }
-
-  .swiper-pagination-total {
-    margin-left: 5px;
-  }
 `;
 
 export const PaginationWrapper = styled.div`

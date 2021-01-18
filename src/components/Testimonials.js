@@ -27,7 +27,7 @@ const comments = [
   },
   {
     comment:
-      "It was a pleasure working with a knowledgeable and efficient team at Gokulum Homes. We really appreciate the attention paid to our concerns, from catering to interior design needs, planning finances, or building our perfect abode. I would recommend them to anyone who needs an expert realtor.",
+      "It was a pleasure working with a knowledgeable and efficient team at Gokulum Homes. We really appreciate the attention paid to our concerns, from catering to interior design needs, planning finances, or building our perfect abode.",
     name: "Soumya Sharma",
     location: " Dwarka Client",
   },
