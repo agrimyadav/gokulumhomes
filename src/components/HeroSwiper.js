@@ -11,11 +11,11 @@ import {
 import ImageLazyLoad from "./common/ImageLazyLoad";
 
 const images = [
-  "/images/home1.png",
-  "/images/home2.png",
-  "/images/home3.png",
-  "/images/hero4.jpg",
-  "/images/hero5.jpg",
+  "/images/1.png",
+  "/images/2.png",
+  "/images/3.png",
+  "/images/4.png",
+  "/images/5.png",
 ];
 
 const params = {
