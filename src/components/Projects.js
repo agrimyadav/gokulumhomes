@@ -97,7 +97,6 @@ const Projects = () => {
                       <Image>
                         <ImageLazyLoad
                           bgImg={detail.mainImage}
-                          // url={detail.mainImage}
                           onClick={() => {
                             setShowSwiper(true);
                             setProjectImages(detail);
