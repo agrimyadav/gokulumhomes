@@ -89,8 +89,9 @@ const HeroSwiper = () => {
           {images.map((image) => {
             return (
               <div key={image}>
-                <ImageLazyLoad
-                  bgImg={image}
+                <ImageDiv
+                  //bgImg={image}
+                  url={image}
                   bgPos="center"
                   bgSize="cover"
                   paddingBottom="40.5%"
