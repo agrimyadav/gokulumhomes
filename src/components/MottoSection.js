@@ -15,7 +15,7 @@ const MottoSection = () => {
       <Container>
         <CustomContainer>
           <WrapperGrid>
-            <Image></Image>
+            <Image src="/images/motto2.jpeg"></Image>
             <Text>
               Our motto is 'Comfort, Quality, and Luxury'. Keeping that in mind,
               we reinvent spaces with the sophistication of a luxury brand and

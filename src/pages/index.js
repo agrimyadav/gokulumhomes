@@ -3,6 +3,7 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 
 import WebsiteContainer from "../components/common/WebsiteContainer";
 import Header from "../components/common/Header";
+import SEO from "../components/common/SEO";
 import HeroSwiper from "../components/HeroSwiper";
 import "../styles/scss/style.scss";
 import AboutSection from "../components/AboutSection";
@@ -39,6 +40,7 @@ const theme = {
 const Index = () => {
   return (
     <>
+      <SEO />
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <WebsiteContainer>

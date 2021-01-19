@@ -22,14 +22,14 @@ const comments = [
   {
     comment:
       "Gokulum Homes has been helping me with my real estate needs for more than a year now, and I am really satisfied. They always communicate on time, and lookout for the best of my interests through each negotiation!",
-    name: "Mayank Verma",
-    location: "Gurgaon Client",
+    name: "Mrs Ahuja",
+    location: "Vasant Kunj Client",
   },
   {
     comment:
       "It was a pleasure working with a knowledgeable and efficient team at Gokulum Homes. We really appreciate the attention paid to our concerns, from catering to interior design needs, planning finances, or building our perfect abode.",
-    name: "Soumya Sharma",
-    location: " Dwarka Client",
+    name: "Mohit Gogia",
+    location: " Dlf Magnolias, Gurgaon Client",
   },
   {
     comment:

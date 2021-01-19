@@ -112,10 +112,8 @@ export const ImageDiv = styled.div`
 
 export const Close = styled.img`
   position: absolute;
-  top: 32px;
-  right: 32px;
-  height: 56px;
-  width: 56px;
+  top: 16px;
+  right: 16px;
   cursor: pointer;
   z-index: 2;
 `;

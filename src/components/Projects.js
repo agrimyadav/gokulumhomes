@@ -30,6 +30,7 @@ const data = [
       "/images/perojects/project1/images/3.jpg",
       "/images/perojects/project1/images/4.jpg",
       "/images/perojects/project1/images/5.jpg",
+      "/images/home6.jpeg",
       "/images/perojects/project1/images/6.JPG",
       "/images/perojects/project1/images/7.JPG",
       "/images/perojects/project1/images/8.JPG",
