@@ -36,6 +36,7 @@ const params = {
 
 const ProjectImagesSwiper = ({ showSwiper, setShowSwiper, data }) => {
   const targetElement = React.useRef(null);
+  console.log(data.projectImages());
 
   //   React.useEffect(() => {
   //     if (showSwiper) {
@@ -55,10 +56,10 @@ const ProjectImagesSwiper = ({ showSwiper, setShowSwiper, data }) => {
             }}
           />
           <Text>{data.heading}</Text>
-          <SwiperWrapper length={data.projectImages.length}>
-            {data.projectImages.length > 1 ? (
+          <SwiperWrapper length={data.projectImages().length}>
+            {data.projectImages().length > 1 ? (
               <Swiper {...params}>
-                {data.projectImages.map((image) => {
+                {data.projectImages().map((image) => {
                   return (
                     <div key={image}>
                       <ImageLazyLoad
