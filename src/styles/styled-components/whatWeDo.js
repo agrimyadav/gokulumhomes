@@ -9,7 +9,8 @@ export const OuterWrapper = styled.div`
 `;
 
 export const MainWrapper = styled.div`
-  margin-top: 250px;
+  // margin-top: 250px;
+  margin-top: 500px;
 
   @media only screen and ${device.mobileL} {
     margin: 0;

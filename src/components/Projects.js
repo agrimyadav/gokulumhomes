@@ -47,15 +47,28 @@ const data = [
     location: "DLF Phase - I, Gurgaon",
     count: "03",
     projectImages: () =>
-      [...Array(2)].map((arr, id) => "/images/perojects/project3/Cover.jpg"),
+      [...Array(25)].map(
+        (arr, id) => `/images/perojects/project3/images/${id + 1}.jpg`
+      ),
     info:
       "Furnished with sophisticated interiors, this newly-built builder floor is located in the heart of Gurugram. It spans an enormous indoor space with fully-furnished bedrooms, bath spaces, walk-in closets, a rooftop bar, and a terrace garden. ",
+  },
+  {
+    heading: "Luxury Builder Floor",
+    mainImage: "/images/perojects/project4/Cover.jpg",
+    location: "DLF Phase - I, Gurgaon",
+    count: "04",
+    projectImages: () =>
+      [...Array(2)].map((arr, id) => `/images/perojects/project4/Cover.jpg`),
+    info:
+      "Built at a serene and secure location in the heart of gurugram. It spans an enormous indoor space with fully-furnished bedrooms, bath spaces, walk-in closets, a rooftop bar, and a terrace garden.",
   },
 ];
 
 const Projects = () => {
   const [showSwiper, setShowSwiper] = useState(false);
   const [projectImages, setProjectImages] = useState({});
+
   return (
     <>
       {showSwiper && (
