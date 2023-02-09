@@ -95,8 +95,10 @@ export const GetInTouch = styled.div`
   text-align: center;
   position: absolute;
   width: min-content;
-  right: 0;
-  bottom: 0;
+  // right: 0;
+  // bottom: 0;
+  left: 0;
+  bottom: -350px;
 
   @media only screen and ${device.mobileL} {
     position: inherit;
