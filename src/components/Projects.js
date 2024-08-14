@@ -22,8 +22,7 @@ const data = [
     mainImage: "/images/perojects/project1/Cover.jpg",
     location: "DLF Phase - IV, Gurgaon",
     count: "01",
-    info:
-      "Built at a serene and secure location in Gurugram, this super luxurious builder floor stands tall facing a beautiful park. It is a modern masterpiece, furnished with high-end interiors and state-of-the-art architecture. ",
+    info: "Built at a serene and secure location in Gurugram, this super luxurious builder floor stands tall facing a beautiful park. It is a modern masterpiece, furnished with high-end interiors and state-of-the-art architecture. ",
     projectImages: () =>
       [...Array(17)].map(
         (arr, id) => `/images/perojects/project1/images/${id + 1}.jpg`
@@ -38,8 +37,7 @@ const data = [
       [...Array(21)].map(
         (arr, id) => `/images/perojects/project2/images/${id + 1}.jpg`
       ),
-    info:
-      "Situated in one of the most sought-after neighborhoods in Gurugram, this elegant builder floor has spacious floor layouts fitted with modern interiors. It features a private elevator and ample parking space, perfectly crafted to suit the luxurious lifestyle.",
+    info: "Situated in one of the most sought-after neighborhoods in Gurugram, this elegant builder floor has spacious floor layouts fitted with modern interiors. It features a private elevator and ample parking space, perfectly crafted to suit the luxurious lifestyle.",
   },
   {
     heading: "Luxury Builder Floor",
@@ -50,8 +48,7 @@ const data = [
       [...Array(25)].map(
         (arr, id) => `/images/perojects/project3/images/${id + 1}.jpg`
       ),
-    info:
-      "Furnished with sophisticated interiors, this newly-built builder floor is located in the heart of Gurugram. It spans an enormous indoor space with fully-furnished bedrooms, bath spaces, walk-in closets, a rooftop bar, and a terrace garden. ",
+    info: "Furnished with sophisticated interiors, this newly-built builder floor is located in the heart of Gurugram. It spans an enormous indoor space with fully-furnished bedrooms, bath spaces, walk-in closets, a rooftop bar, and a terrace garden. ",
   },
   {
     heading: "Luxury Builder Floor",
@@ -59,9 +56,19 @@ const data = [
     location: "DLF Phase - I, Gurgaon",
     count: "04",
     projectImages: () =>
-      [...Array(2)].map((arr, id) => `/images/perojects/project4/Cover.jpg`),
-    info:
-      "Built at a serene and secure location in the heart of gurugram. It spans an enormous indoor space with fully-furnished bedrooms, bath spaces, walk-in closets, a rooftop bar, and a terrace garden.",
+      [...Array(28)].map(
+        (arr, id) => `/images/perojects/project4/images/${id + 1}.jpg`
+      ),
+    info: "Built at a serene and secure location in the heart of gurugram. It spans an enormous indoor space with fully-furnished bedrooms, bath spaces, walk-in closets, a rooftop bar, and a terrace garden.",
+  },
+  {
+    heading: "Luxury Builder Floor",
+    mainImage: "/images/perojects/project5/Cover.jpg",
+    location: "DLF Phase - I, Gurgaon",
+    count: "05",
+    projectImages: () =>
+      [...Array(2)].map((arr, id) => `/images/perojects/project5/images/1.jpg`),
+    info: "This elegant builder floor has a triplex with private elevator with bath spaces, walk in closets, a rooftop bar and a terrace garden. Located in the heart of Gurugram, perfectly crafted to suit the luxurious lifestyle.",
   },
 ];
 
@@ -100,7 +107,7 @@ const Projects = () => {
                           mobilePadding="124%"
                         />
                       </Image>
-                      <Count>{detail.count}</Count>
+                      {/* <Count>{detail.count}</Count> */}
                     </div>
                     <Heading>{detail.heading}</Heading>
                     <Location>{detail.location}</Location>

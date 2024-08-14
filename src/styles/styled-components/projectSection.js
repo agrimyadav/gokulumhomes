@@ -90,15 +90,17 @@ export const Info = styled.p`
 export const GetInTouch = styled.div`
   background: #141414;
   border-radius: 1000px;
+  // padding: 100px;
   padding: 160px 100px 100px;
   max-width: 480px;
+  max-height: 200px;
   text-align: center;
   position: absolute;
   width: min-content;
-  // right: 0;
+  right: 0;
   // bottom: 0;
-  left: 0;
-  bottom: -350px;
+  // left: 0;
+  bottom: 0;
 
   @media only screen and ${device.mobileL} {
     position: inherit;
@@ -114,8 +116,9 @@ export const GetInTouch = styled.div`
     margin: auto;
   }
 
-  @media only screen and ${device.tabletL} {
-    padding: 66px 50px;
+  @media only screen and ${device.tablet} {
+    padding: 80px 30px 30px;
+    border-radius: 50%;
   }
 
   @media only screen and ${device.laptop} {
