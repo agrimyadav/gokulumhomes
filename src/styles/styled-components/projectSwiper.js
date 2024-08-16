@@ -114,8 +114,9 @@ export const Close = styled.img`
   position: absolute;
   top: 16px;
   right: 16px;
+  padding: 50px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 99999;
 `;
 
 export const Text = styled.p`

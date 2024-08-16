@@ -1,5 +1,12 @@
 import React from "react";
-import Swiper from "react-id-swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import {
   Container,
   ImageDiv,
@@ -13,13 +20,9 @@ import ImageLazyLoad from "./ImageLazyLoad";
 
 const params = {
   pagination: {
-    el: ".swiper-pagination",
     type: "fraction",
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+
   speed: 1300,
   breakpoints: {
     1024: {
@@ -58,10 +61,17 @@ const ProjectImagesSwiper = ({ showSwiper, setShowSwiper, data }) => {
           <Text>{data.heading}</Text>
           <SwiperWrapper length={data.projectImages().length}>
             {data.projectImages().length > 1 ? (
-              <Swiper {...params}>
+              <Swiper
+                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                // spaceBetween={50}
+                {...params}
+                navigation
+
+                // scrollbar={{ draggable: true }}
+              >
                 {data.projectImages().map((image) => {
                   return (
-                    <div key={image}>
+                    <SwiperSlide key={image}>
                       <ImageLazyLoad
                         bgImg={image}
                         bgPos="center"
@@ -71,7 +81,7 @@ const ProjectImagesSwiper = ({ showSwiper, setShowSwiper, data }) => {
                         mobilePadding="66%"
                         tabletPadding="100%"
                       />
-                    </div>
+                    </SwiperSlide>
                   );
                 })}
               </Swiper>

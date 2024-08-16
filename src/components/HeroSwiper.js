@@ -1,5 +1,20 @@
 import React, { useState } from "react";
-import Swiper from "react-id-swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+  EffectCoverflow,
+} from "swiper/modules";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import "swiper/css/scrollbar";
 import {
   Count,
   ImageDiv,
@@ -58,7 +73,7 @@ const params = {
 const HeroSwiper = () => {
   const [swiper, setSwiper] = useState(null);
 
-  const onSwiperInit = (swiper) => {
+  const getSwiper = (swiper) => {
     setSwiper({ swiper });
 
     swiper &&
@@ -85,11 +100,22 @@ const HeroSwiper = () => {
       <Div className="hero-swiper">
         <Swiper
           {...params}
-          getSwiper={(swiperReady) => onSwiperInit(swiperReady)}
+          modules={[
+            Navigation,
+            Pagination,
+            Scrollbar,
+            A11y,
+            EffectCoverflow,
+            Autoplay,
+          ]}
+          // spaceBetween={50}
+          {...params}
+          // navigation
+          onSwiper={getSwiper}
         >
           {images.map((image) => {
             return (
-              <div key={image}>
+              <SwiperSlide key={image}>
                 <ImageDiv
                   //bgImg={image}
                   url={image}
@@ -98,7 +124,7 @@ const HeroSwiper = () => {
                   paddingBottom="40.5%"
                   mobilePadding="75.5%"
                 />
-              </div>
+              </SwiperSlide>
             );
           })}
         </Swiper>
